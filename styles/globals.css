@@ -1,0 +1,167 @@
+@font-face {
+  font-family: BlackHanSans;
+  src: url("../fonts/BlackHanSans-Regular.otf");
+  src: url("../fonts/BlackHanSans-Regular.ttf") format("truetype"),
+    url("../fonts/BlackHanSans-Regular.eot") format("embedded-opentype"),
+    url("../fonts/BlackHanSans-Regular.otf"),
+    url("../fonts/BlackHanSans-Regular.woff") format("woff"),
+    url("../fonts/BlackHanSans-Regular.svg#BlackHanSans-Regular") format("svg");
+}
+
+@font-face {
+  font-family: CascadiaCode;
+  src: url("../fonts/Cascadia.otf");
+  src: url("../fonts/Cascadia.ttf") format("truetype"),
+    url("../fonts/Cascadia.eot") format("embedded-opentype"),
+    url("../fonts/Cascadia.otf"), url("../fonts/Cascadia.woff") format("woff"),
+    url("../fonts/Cascadia.svg#CascadiaCode") format("svg");
+}
+
+@font-face {
+  font-family: Lightmoon;
+  src: url("../fonts/Lightmoon.otf");
+  src: url("../fonts/Lightmoon.ttf") format("truetype"),
+    url("../fonts/Lightmoon.eot") format("embedded-opentype"),
+    url("../fonts/Lightmoon.otf"), url("../fonts/Lightmoon.woff") format("woff"),
+    url("../fonts/Lightmoon.svg#Lightmoon") format("svg");
+}
+
+:root {
+  /* colors */
+  --clr-primary-1002: #00bf00;
+  --clr-primary-100: #1fd900;
+  --clr-primary-200: #85ff72;
+  --clr-primary-300: #c7ffbc;
+  --clr-neutral-100: #000000;
+  --clr-neutral-90d: #181915; /* desktop main */
+  --clr-neutral-90m: #23241e; /* mobile main */
+  --clr-neutral-70: #1e1e18; /* desktop nav & footer*/
+  --clr-neutral-60: #282825; /* chatGPT response */
+  --clr-neutral-10: #e0e4df; /* featured text color */
+  --clr-neutral-0: #ffffff;
+
+  /* font family */
+  --ff-primary: CascadiaCode, sans-serif;
+  --ff-secondary: BlackHanSans, sans-serif;
+  --ff-tertiary: Lightmoon, sans-serif;
+
+  /* font size */
+  --fs-60: 3.75rem;
+  --fs-40: 2.5rem;
+  --fs-32: 2rem;
+  --fs-30: 1.875rem;
+  --fs-28: 1.75rem;
+  --fs-24: 1.5rem;
+  --fs-20: 1.25rem;
+  --fs-17: 1.0625rem;
+  --fs-16: 1rem;
+  --fs-15: 0.9375rem;
+  --fs-14: 0.875rem;
+  --fs-13: 0.8125rem;
+  --fs-12: 0.75rem;
+
+  /* sizes */
+  --size-4: 0.25rem; /* 4px */
+  --size-8: 0.5rem; /* 8px */
+  --size-12: 0.75rem; /* 12px */
+  --size-14: 0.875rem; /* 14px */
+  --size-16: 1rem; /* 16px */
+  --size-28: 1.75rem; /* 28px */
+  --size-32: 2rem; /* 32px */
+  --size-36: 2.25rem; /* 36px */
+  --size-40: 2.5rem; /* 40px */
+  --size-48: 3rem; /* 48px */
+  --size-64: 4rem; /* 64px */
+  --size-80: 5rem; /* 80px */
+  --size-128: 8rem; /* 128px */
+  --size-140: 8.75rem; /* 140px */
+  --size-150: 9.375rem; /* 150px */
+  --size-160: 10rem; /* 160px */
+  --size-170: 10.625rem; /* 170px */
+  --size-180: 11.25rem; /* 180px */
+  --size-190: 11.875rem; /* 190px */
+  --size-192: 12rem; /* 192px */
+  --size-200: 12.5rem; /* 200px */
+  --size-256: 16rem; /* 256px */
+  --size-280: 17.5rem; /* 280px */
+  --size-320: 20rem; /* 320px */
+  --size-420: 26.25rem; /* 420px */
+  --size-440: 27.5rem; /* 440px */
+
+  --ff-body: var(--ff-primary);
+  --ff-logo: var(--ff-tertiary);
+  --ff-large: var(--ff-secondary);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  /* check later */
+  line-height: 1.25;
+  background-color: var(--clr-neutral-90m);
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* check later */
+/* General Styling */
+body,
+th {
+  font-size: var(--fs-14);
+  font-family: var(--ff-body);
+}
+
+html,
+body {
+  max-width: 90rem /* 1440px */;
+  margin-inline: auto;
+}

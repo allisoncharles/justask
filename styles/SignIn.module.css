@@ -1,0 +1,53 @@
+.signin {
+  background: var(--clr-neutral-90m);
+}
+
+.signin__wrapper {
+  width: max-content;
+  margin-inline: auto;
+  margin-block: var(--size-64) var(--size-128);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-160);
+  height: calc(100vh - 50vh);
+}
+
+@media screen and (min-width: 54.375em) {
+  .signin__wrapper {
+    margin-block: var(--size-128) var(--size-180);
+  }
+}
+
+.signin__icon__text {
+  font-family: var(--ff-tertiary);
+  font-size: var(--fs-40);
+  color: var(--clr-neutral-0);
+  font-weight: 400;
+  line-height: 27px;
+}
+
+@media screen and (min-width: 54.375em) {
+  .signin__icon__text {
+    font-size: var(--fs-60);
+  }
+}
+
+.signin__btn {
+  padding: var(--size-12) var(--size-28);
+  width: max-content;
+  margin-inline: auto;
+  border: none;
+  background: rgb(156, 150, 150);
+  color: white;
+  cursor: pointer;
+}
+
+.signin__btn:hover {
+  transform: scale(1.04);
+  background: #1fd900;
+}
+
+.signin__icon__age {
+  color: var(--clr-primary-100);
+}

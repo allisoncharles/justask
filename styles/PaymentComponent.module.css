@@ -1,0 +1,105 @@
+.PaymentComponent {
+  background: var(--clr-neutral-90m);
+  padding-inline: var(--size-16);
+  padding-block: var(--size-28) var(--size-80);
+  color: var(--clr-primary-300);
+}
+
+@media (min-width: 600px) {
+  .PaymentComponent {
+    margin-top: 14vh;
+  }
+}
+
+.PaymentComponent__toggle__wrapper {
+  width: max-content;
+  background: #4f504b;
+  margin-inline: auto;
+  display: flex;
+  padding: var(--size-4);
+  border-radius: 18px;
+  border-radius: 2px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  margin-bottom: var(--size-32);
+}
+
+@media screen and (max-width: 22.5em) {
+  .PaymentComponent__toggle__wrapper {
+    flex-direction: column;
+  }
+}
+
+.PaymentComponent__option {
+  /* background: white; */
+  padding: var(--size-8) var(--size-12);
+  color: rgb(252, 239, 239);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.PaymentComponent__option[payment-selected="true"] {
+  background: rgb(129, 235, 129);
+  padding: var(--size-8) var(--size-12);
+  border-radius: 2px;
+  color: rgb(48, 37, 37);
+  transition: 0.5s;
+}
+
+.PaymentComponent__desc {
+  width: calc(100% - 32px);
+  margin-inline: auto;
+  text-align: center;
+  color: #6ab657;
+  margin-bottom: var(--size-64);
+}
+
+.PaymentComponent__promo {
+  color: #c7ffbc;
+}
+
+.PaymentComponent__promo__back {
+  background: rgb(226, 238, 58);
+  color: black;
+  font-weight: bold;
+}
+
+.PaymentComponent__pricing__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-32);
+}
+
+@media screen and (min-width: 49.375em) {
+  .PaymentComponent__pricing__wrapper {
+    flex-direction: row;
+  }
+}
+
+.PaymentComponent__pricing__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-16);
+  border: 2px solid #373834;
+  padding: var(--size-28);
+  width: 250px;
+}
+
+.PaymentComponent__price__head {
+  font-weight: bold;
+  font-size: var(--fs-16);
+}
+
+.PaymentComponent__price__fig {
+  font-size: var(--fs-24);
+  color: #bcbdb9;
+}
+
+.PaymentComponent__pricing__item > p {
+  color: #6ab657;
+}

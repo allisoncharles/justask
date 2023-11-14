@@ -1,0 +1,121 @@
+.userComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.userComponent {
+  background: var(--clr-neutral-90m);
+  width: 100%;
+  margin-block: 30px;
+  max-height: 100vh;
+  position: relative;
+}
+
+.userComponent__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userComponent__container {
+  height: max-content;
+  width: max-content;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+  background: #3c3c39;
+}
+
+@media (max-width: 280px) {
+  .userComponent__container {
+    padding: 40px 16px;
+  }
+}
+
+.userComponent__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.userComponent__name {
+  color: var(--clr-neutral-10);
+  font-size: var(--fs-17);
+}
+
+.userComponent__email {
+  color: var(--clr-primary-300);
+}
+
+.userComponent__tokens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.userComponent__token {
+  color: var(--clr-primary-300);
+}
+
+.userComponent__token__input {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  color: var(--clr-primary-300);
+}
+
+.userComponent__token__input:focus {
+  outline: none;
+  border: none;
+}
+
+.userComponent__token__value {
+  color: var(--clr-neutral-10);
+}
+
+.userComponent__btn {
+  border: none;
+  background: var(--clr-primary-100);
+  padding: 6px 12px;
+  color: var(--clr-neutral-10);
+  cursor: pointer;
+}
+
+.userComponent__btn:hover {
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.success {
+  color: #fff;
+  background: rgb(62, 216, 62);
+  width: max-content;
+  padding: 4px 12px;
+  animation: hide 5s ease-in 5s;
+  animation-fill-mode: forwards;
+}
+
+.error {
+  color: #fff;
+  background-color: rgb(212, 68, 68);
+  width: max-content;
+  padding: 4px 12px;
+  animation: hide 5s ease-in 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+  to {
+    visibility: hidden;
+  }
+}

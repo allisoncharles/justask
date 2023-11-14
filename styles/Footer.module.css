@@ -1,0 +1,27 @@
+.footer {
+  background: var(--clr-neutral-90m);
+  padding-top: var(--size-128);
+  padding-inline: var(--size-16);
+  padding-bottom: var(--size-40);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-28);
+  align-items: center;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.footer__container a {
+  text-decoration: none;
+  color: var(--clr-primary-300);
+  text-align: center;
+}
+
+.footer__text__wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
