@@ -5,7 +5,7 @@ import dbConnect from "../../utils/mongo";
 export default async function handler(req, res) {
   await dbConnect();
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: process.env.OPENAI_API,,
   });
 
   const openai = new OpenAIApi(configuration);
